@@ -19,7 +19,7 @@ export class CoffeesService {
     private readonly dataSource: DataSource,
     private readonly configService: ConfigService,
   ) {
-    const dbHost = this.configService.get<string>('DATABASE_HOST', 'localhost');
+    const dbHost = this.configService.get('database.host', 'localhost');
     console.log(dbHost);
   }
 
